@@ -1,0 +1,575 @@
+
+body {
+    background-color: #0a0a0a;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+  
+   /* Base Navbar Style */
+    /* Gaming style navbar */
+    .navbar {
+        background: linear-gradient(90deg, #0f0c29, #302b63, #24243e);
+        padding: 10px 20px;
+border-bottom: 2px solid #00f0ff;
+    box-shadow: 0 0 10px #00f0ff55;
+  }
+
+  .navbar-brand span {
+    color: #00f0ff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 5px #00f0ff;
+  }
+
+  .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link:hover {
+    background-color: #00f0ff33;
+    color: #00f0ff;
+    box-shadow: 0 0 8px #00f0ff;
+  }
+
+  .form-control {
+    background-color: #1a1a1a;
+    border: 1px solid #00f0ff88;
+    color: #fff;
+    border-radius: 8px;
+  }
+
+  .form-control:focus {
+    box-shadow: 0 0 8px #00f0ff;
+    border-color: #00f0ff;
+    background-color: #111;
+  }
+
+  .navbar-toggler {
+    background-color: #00f0ff;
+  }
+
+  .navbar-toggler-icon {
+    filter: invert(100%);
+  }
+
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+    .carousel-caption {
+      background: rgba(77, 255, 0, 0.1);
+      padding: 6px 18px;
+      border-radius: 50px;
+      border: 1px solid #00ffd1;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 40px;
+    }
+    .carousel-caption h5 {
+      color: black;
+      font-family: 'Sarpanch', sans-serif;
+      font-size: 1.6rem;
+      text-shadow: 0 0 12px #00ffd1;
+    }
+    .carousel-inner img {
+      height: 450px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+    .carousel {
+      margin-top: 30px;
+      box-shadow: 0 0 25px rgba(0, 255, 209, 0.4);
+      border-radius: 20px;
+      overflow: hidden;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .tab-content {
+      padding: 2rem;
+    }
+
+
+
+ @keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px 5px rgba(155, 89, 182, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 30px 15px rgba(155, 89, 182, 0.7);
+  }
+}
+    @keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+    .about-box {
+      background-color: #111;
+      border: 2px solid rgb(0, 238, 255);
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 0 25px rgba(0, 255, 209, 0.2), 0 0 40px rgba(0, 255, 209, 0.1) inset;
+      transition: all 0.3s ease-in-out;
+    }
+    .about-box h5 {
+      color: #00ffd1;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+    .about-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(0, 255, 209, 0.6), 0 0 50px rgba(0, 255, 209, 0.3) inset;
+    }
+    
+
+    .quick-box {
+  background: linear-gradient(145deg, #0e0e0e, #000000);
+  border: 2px solid #00ffd1;
+  border-radius: 20px;
+  padding: 25px;
+  transition: all 0.4s ease;
+  animation: floatPulse 4s ease-in-out infinite;
+  box-shadow: 0 0 20px rgba(0, 255, 209, 0.2), 0 0 35px rgba(0, 255, 209, 0.1) inset;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  position: relative;
+  overflow: hidden;
+}
+
+.quick-box::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 90deg at 50% 50%,rgb(0, 242, 255), transparent,rgb(187, 0, 255), transparent,rgb(204, 255, 0));
+  animation: rotate360 5s linear infinite;
+  opacity: 0.15;
+}
+
+.quick-box:hover {
+  transform: scale(1.08);
+  background: linear-gradient(145deg,rgb(12, 96, 240) 10%,rgb(255, 0, 234) 90%);
+  color: black;
+  box-shadow: 0 0 35px #00ffd1, 0 0 50px rgba(0, 183, 255, 0.4) inset;
+}
+
+.quick-box h5 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-shadow: 0 0 6px #00ffd1;
+  z-index: 2;
+  position: relative;
+}
+
+@keyframes floatPulse {
+  0% {
+    transform: translateY(0px);
+    box-shadow: 0 0 10px #00ffd1;
+  }
+  50% {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px #00ffd1, 0 0 40px #00ffd1 inset;
+  }
+  100% {
+    transform: translateY(0px);
+    box-shadow: 0 0 10px #00ffd1;
+  }
+}
+
+.quick-box {
+  animation: floatPulse 4s ease-in-out infinite;
+}
+.glitch-box {
+  position: relative;
+  border: 4px solid transparent;
+  border-image: linear-gradient(145deg, #00ffd1, #0077ff, #9b59b6) 1;
+  border-radius: 26px;
+  box-shadow: 0 0 45px rgba(0,255,209,0.6), 0 0 100px rgba(0,255,209,0.18) inset;
+  background: 
+    linear-gradient(120deg, rgba(0,0,0,0.85), rgba(10,10,10,0.75)),
+    linear-gradient(135deg, rgba(0,255,209,0.08) 0%, rgba(255,0,234,0.10) 100%);
+  background-blend-mode: overlay;
+  backdrop-filter: blur(8px) saturate(140%);
+  padding: 50px 30px 40px 30px;
+  overflow: hidden;
+  transition: transform 0.35s cubic-bezier(.4,2,.5,.8), box-shadow 0.35s;
+  animation: glitchAnim 2s infinite;
+}
+.glitch-box:hover {
+  transform: scale(1.04) rotate(-1deg);
+  box-shadow: 0 0 60px #00ffd1, 0 0 120px #ff5edf inset;
+}
+
+.glitch-box {
+  /* ...existing styles... */
+  box-shadow: 0 0 30px #00ffd1, 0 0 60px #ff00ea;
+  animation: neon-glow 1.2s alternate infinite;
+}
+
+@keyframes neon-glow {
+  0% {
+    box-shadow: 0 0 30px #00ffd1, 0 0 60px #ff00ea;
+    border-color: #00ffd1;
+  }
+  100% {
+    box-shadow: 0 0 60px #ff00ea, 0 0 120px #00ffd1;
+    border-color: #ff00ea;
+  }
+} 
+
+
+  section video {
+    filter: brightness(0.4);
+  }
+
+
+
+
+  .bg-glass {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0,255,209,0.4);
+  }
+
+
+ 
+  @keyframes neon-glow {
+    0% {
+      text-shadow: 0 0 10px #00ffd1, 0 0 20px #00ffd1;
+    }
+    100% {
+      text-shadow: 0 0 20px #aaff00, 0 0 40px #aaff00;
+    }
+  }
+
+
+
+  .glow-cyan-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  color: #00fff7;
+  text-align: center;
+  text-shadow: 0 0 5px #00fff7, 0 0 10px #00fff7, 0 0 20px #00fff7;
+  animation: glowCyan 1.8s ease-in-out infinite alternate;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+@keyframes glowCyan {
+  from {
+    text-shadow: 0 0 5px #00fff7, 0 0 10px #00fff7, 0 0 20px #00fff7;
+  }
+  to {
+    text-shadow: 0 0 10px #00fff7, 0 0 20px #00fff7, 0 0 30px #00fff7;
+  }
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap');
+
+.rajdhani-font {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+
+.glow-ticker {
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #00ffd1;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00ffd1;
+  color: #00ffd1;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  overflow: hidden;
+}
+.glow-ticker marquee {
+  text-shadow: 0 0 10px #00ffd1;
+}
+
+@keyframes arrowPulse {
+  from { transform: scale(1); opacity: 0.7; }
+  to { transform: scale(1.2); opacity: 1; }
+} 
+
+/* ...Add animation support... */
+
+  .hover-shadow:hover {
+    box-shadow: 0 0 15px #0ff, 0 0 25px #0ff inset;
+  }
+  .text-glow {
+    text-shadow: 0 0 12px #00ffd1;
+  }
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  .fadeInUp {
+    animation-name: fadeInUp;
+  }
+  .zoomIn {
+    animation-name: zoomIn;
+  }
+  .pulse {
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+  }
+  @keyframes fadeInUp {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+  @keyframes zoomIn {
+    from {opacity: 0; transform: scale(0.9);}
+    to {opacity: 1; transform: scale(1);}
+  }
+  @keyframes pulse {
+    0% {box-shadow: 0 0 0 0 rgba(0,255,255,0.7);}
+    70% {box-shadow: 0 0 0 10px rgba(0,255,255, 0);}
+    100% {box-shadow: 0 0 0 0 rgba(0,255,255, 0);}
+  }
+
+ 
+  html, body {
+    height: 100%;
+  }
+
+  .modal-content, .modal-body, iframe {
+    height: 100%;
+  }
+
+  iframe {
+    width: 100%;
+    border: none;
+  }
+
+  .downloading::after {
+    content: " ⏬ Downloading...";
+    margin-left: 8px;
+    color: #0dcaf0;
+    font-weight: bold;
+    animation: blink 1s step-end infinite;
+  }
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+
+ 
+  /* Card Hover Animation */
+  .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Smooth button hover animation */
+  .card .btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .card .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  }
+
+  /* Optional: glow border on focus */
+  .card:focus-within {
+    outline: 2px solid #00f7ff;
+    outline-offset: 4px;
+  }
+
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #00f7ff;
+  text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff;
+  animation: pulse-glow 2s infinite ease-in-out;
+  font-family: 'Orbitron', sans-serif; /* Optional futuristic font */
+}
+
+.section-title .icon {
+  font-size: 2.5rem;
+  margin-right: 10px;
+}
+
+.section-title .highlight {
+  color: #ff00cc;
+  text-shadow: 0 0 10px #ff00cc;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff;
+  }
+  50% {
+    text-shadow: 0 0 20px #00f7ff, 0 0 30px #00f7ff;
+  }
+}
+
+.video-bg-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Optional dark tint for readability */
+  z-index: 1;
+}
+
+.content-overlay {
+  position: relative;
+  z-index: 2; /* This ensures all content stays above video + overlay */
+}
+
+.download-btn-glow {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px #00ffffa8, 0 0 25px #00ffff33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-btn-glow:hover {
+  background: linear-gradient(135deg, #928dab, #1f1c2c);
+  color: #00f7ff;
+  box-shadow: 0 0 18px #00f7ff, 0 0 35px #00f7ff80;
+  transform: translateY(-2px) scale(1.03);
+}
+
+.download-btn-glow .glow-icon {
+  margin-right: 8px;
+  animation: pulse-glow 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.2); }
+}
+
+.badge-new {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #ff2d75;
+  font-size: 0.7rem;
+  padding: 4px 6px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+#categoryDownloadModal .btn:hover {
+  box-shadow: 0 0 20px #00c6ff, 0 0 30px #0072ff;
+}
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.service-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0, 255, 209, 0.3), 0 0 40px rgba(0, 255, 209, 0.2);
+  border-color: #00ffd1 !important;
+}
+
+.neon-heading {
+  text-shadow: 0 0 10px #00ffd1, 0 0 30px #00ffd1;
+}
+.underline-glow {
+  width: 120px;
+  height: 4px;
+  background: #00ffd1;
+  border-radius: 2px;
+  box-shadow: 0 0 10px #00ffd1, 0 0 20px #00ffd1;
+}
+.neon-box {
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.glow-icon {
+  font-size: 1.5rem;
+  color: #00ffd1;
+  text-shadow: 0 0 8px #00ffd1;
+}
+
+/* Apply only to buttons inside the Home section */
+#home-section .btn {
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00ffd1;
+  transition: 0.3s ease;
+}
+
+#home-section .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffd1, 0 0 40px #00ffd1;
+}
+
+
+.card:hover {
+  box-shadow: 0 0 30px #00ffd1a9;
+  transform: scale(1.01);
+  transition: 0.3s ease-in-out;
+}
+/* ...ratings... */
+
+  .btn-outline-warning:hover,
+.btn-outline-info:hover,
+.btn-outline-success:hover {
+  background-color: currentColor;
+  color: #000;
+  border-color: currentColor;
+} 
