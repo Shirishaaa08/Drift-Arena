@@ -1,4 +1,4 @@
-# Drift Arena - Futuristic Gaming & Racing Portal
+# DriftArena - Futuristic Gaming & Racing Portal
 
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B%20%7C%208.x-777bb4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
 [![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
