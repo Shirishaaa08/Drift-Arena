@@ -1,4 +1,4 @@
-# 🏎️ Drift Arena - Futuristic Gaming & Racing Portal
+# Drift Arena - Futuristic Gaming & Racing Portal
 
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B%20%7C%208.x-777bb4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
 [![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
@@ -9,22 +9,22 @@
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
-- **⚡ Cyberpunk & Neon UI:** Designed with high-energy neon aesthetics, glowing animations, custom gaming typography (*Orbitron* and *Audiowide*), dynamic particle backgrounds (`particles.js`), and embedded video banners.
-- **🔥 Trending Games:** Dynamic showcase of the hottest racing and action titles with real-time descriptions and trailer previews.
-- **🚀 Upcoming Releases & Pre-Registration:** Gamers can explore upcoming games and pre-register with instant modal/JSON feedback.
-- **📥 Try & Download:** Dedicated hub for gameplay previews, demo versions, and downloadable packages.
-- **🖼️ Media Gallery:** Interactive image and video gallery showcasing wallpapers, screenshots, and cinematic gaming clips.
-- **💬 Feedback & Community Reviews:** User rating and enquiry submission system.
-- **🛡️ Admin Dashboard:**
+- ** Cyberpunk & Neon UI:** Designed with high-energy neon aesthetics, glowing animations, custom gaming typography (*Orbitron* and *Audiowide*), dynamic particle backgrounds (`particles.js`), and embedded video banners.
+- ** Trending Games:** Dynamic showcase of the hottest racing and action titles with real-time descriptions and trailer previews.
+- ** Upcoming Releases & Pre-Registration:** Gamers can explore upcoming games and pre-register with instant modal/JSON feedback.
+- ** Try & Download:** Dedicated hub for gameplay previews, demo versions, and downloadable packages.
+- ** Media Gallery:** Interactive image and video gallery showcasing wallpapers, screenshots, and cinematic gaming clips.
+- ** Feedback & Community Reviews:** User rating and enquiry submission system.
+- ** Admin Dashboard:**
   - Secure admin login (`admin.php`) and registration (`register_admin.php`).
   - Comprehensive user management with soft delete and restore capabilities (`manage_users.php`).
   - Customer enquiry management (`manage_enquiries.php`).
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Component | Technology |
 |---|---|
@@ -37,7 +37,7 @@
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```plaintext
 Drift-Arena/
@@ -69,7 +69,7 @@ Drift-Arena/
 
 ---
 
-## 🚀 Getting Started (Local Setup)
+##  Getting Started (Local Setup)
 
 ### Prerequisites
 - [XAMPP](https://www.apachefriends.org/) (or any PHP & MySQL local server)
@@ -114,12 +114,12 @@ Drift-Arena/
 
 ---
 
-## 👤 Author & Contributor
+##  Author & Contributor
 
 - **GitHub:** [@Shirishaaa08](https://github.com/Shirishaaa08)
 
 ---
 
-## 📄 License
+##  License
 
 This project is open-source and available under the [MIT License](LICENSE).
